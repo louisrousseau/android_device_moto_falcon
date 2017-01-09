@@ -22,8 +22,9 @@ $(call inherit-product, device/motorola/msm8226-common/msm8226.mk)
 
 LOCAL_PATH := device/motorola/falcon
 
-# falcon specific overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+# Overlay
+DEVICE_PACKAGE_OVERLAYS := \
+    device/moto/falcon/overlay
 
 PRODUCT_LOCALES := en_US
 PRODUCT_LOCALES += xhdpi
